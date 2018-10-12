@@ -3,6 +3,7 @@
 	"type": "record",
 	"name": "User",
 	"fields": [
+	    { "name": "id", "type": "string" },
 		{ "name": "username", "type": "string" },
 		{ "name": "password", "type": "string" },
 		{ "name": "full_name", "type": ["null", "string"] },

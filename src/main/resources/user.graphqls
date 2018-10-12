@@ -1,0 +1,15 @@
+type Greeting {
+  id: ID!
+  username: String!
+  password: String!
+  fullName: String!
+  validLogins: Int!
+}
+
+type Query {
+  getUser(id: ID!): Greeting
+}
+
+type Mutation {
+  newUser(username: String!, password: String!, fullName: String!, validLogins: Int!): Greeting!
+}
